@@ -26,8 +26,8 @@ public class AllureTest {
 
     @Step("Получение аргумента")
     private void Step_1() {
-        variable = "System Properties";
-        result = System.getProperty("result");
+        variable = "Environment";
+        result = System.getenv("result");
         logger.info(String.format("%s variable 'result' = '%s'", variable, result));
     }
 
